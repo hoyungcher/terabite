@@ -1,7 +1,7 @@
 import React from 'react';
 import RecipeItem from './RecipeItem';
 
-const RecipeList = props => {
+const RecipesList = props => {
     if (props.items.length === 0) {
         return (
             <div className="center">
@@ -10,15 +10,20 @@ const RecipeList = props => {
         )
     }
 
-
-
     return (
-    <ul>
-        {props.items.map(recipe => {
-            <RecipeItem />
-        })}
+    <ul className="recipes-list">
+        <h2>My recipes</h2>
+        {props.items.map(recipe => (
+            <RecipeItem 
+                key={recipe.id}
+                id={recipe.id}
+                imageURL={recipe.imageURL}
+                name={recipe.name}
+                portions={recipe.portions}
+            />
+        ))}
     </ul>
     )
 }
 
-export default RecipeList;
+export default RecipesList;

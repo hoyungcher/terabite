@@ -1,10 +1,12 @@
 import React from 'react';
 
-const RecipeItem = () => {
+const RecipeItem = props => {
     return (
-    <React.Fragment>
-
-    </React.Fragment>
+    <div className="recipe">
+        <img src={props.imageURL} />
+        <h2>{props.name}</h2>
+        <h4>Serves {props.portions}</h4>
+    </div>
     )
 }
 

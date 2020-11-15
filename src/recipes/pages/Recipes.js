@@ -7,7 +7,7 @@ const Recipes = () => {
         id: '1',
         user_id: "blake",
         name: "Spaghetti Carbonara",
-        imageURL: "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.bbcgoodfood.com%2Frecipes%2Fultimate-spaghetti-carbonara-recipe&psig=AOvVaw0Xy52vNBShgw5mKxIZTIKr&ust=1605476446584000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCLCNkf7_gu0CFQAAAAAdAAAAABAD",
+        imageURL: "https://images.immediate.co.uk/production/volatile/sites/30/2020/08/recipe-image-legacy-id-1001491_11-2e0fa5c.jpg?quality=90&webp=true&resize=300,272",
         ingredients: [
             { ingredient: "eggs", quantity: "3", optional: false },
             { ingredient: "parmesan cheese", quantity: "50g", optional: false },
