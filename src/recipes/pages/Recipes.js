@@ -1,12 +1,13 @@
 import React from 'react';
+import RecipesList from './../components/RecipesList'
 
 const Recipes = () => {
     const RECIPES = [
         {
-        id: '1'
+        id: '1',
         user_id: "blake",
         name: "Spaghetti Carbonara",
-        imageURL: "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.bbcgoodfood.com%2Frecipes%2Fultimate-spaghetti-carbonara-recipe&psig=AOvVaw0Xy52vNBShgw5mKxIZTIKr&ust=1605476446584000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCLCNkf7_gu0CFQAAAAAdAAAAABAD"
+        imageURL: "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.bbcgoodfood.com%2Frecipes%2Fultimate-spaghetti-carbonara-recipe&psig=AOvVaw0Xy52vNBShgw5mKxIZTIKr&ust=1605476446584000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCLCNkf7_gu0CFQAAAAAdAAAAABAD",
         ingredients: [
             { ingredient: "eggs", quantity: "3", optional: false },
             { ingredient: "parmesan cheese", quantity: "50g", optional: false },
@@ -18,7 +19,7 @@ const Recipes = () => {
         portions: 2
         },
         {
-            id: '2'
+            id: '2',
             user_id: "blake",
             name: "Spaghetti al pomodoro",
             imageURL: "https://i.guim.co.uk/img/media/97b05bf6e971aa1e0033268db1cae3d2c9dd15b4/1069_1632_6614_3968/master/6614.jpg?width=620&quality=85&auto=format&fit=max&s=b310ed608b3643b95026a20631873a81",
@@ -39,3 +40,5 @@ const Recipes = () => {
     ]
     return <RecipesList items={RECIPES} />
 }
+
+export default Recipes;
