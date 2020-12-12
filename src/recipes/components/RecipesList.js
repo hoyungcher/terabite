@@ -1,6 +1,8 @@
 import React from 'react';
 import RecipeItem from './RecipeItem';
 
+// import classes from './RecipesList.module.css';
+
 const RecipesList = props => {
     if (props.items.length === 0) {
         return (
@@ -11,7 +13,7 @@ const RecipesList = props => {
     }
 
     return (
-    <ul className="recipes-list">
+    <div className="recipes-list">
         <h2>My recipes</h2>
         {props.items.map(recipe => (
             <RecipeItem 
@@ -22,7 +24,7 @@ const RecipesList = props => {
                 portions={recipe.portions}
             />
         ))}
-    </ul>
+    </div>
     )
 }
 
